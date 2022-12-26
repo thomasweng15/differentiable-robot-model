@@ -762,6 +762,14 @@ class DifferentiableKUKAiiwa(DifferentiableRobotModel):
         self.name = "differentiable_kuka_iiwa"
         super().__init__(self.urdf_path, self.name, device=device)
 
+class DifferentiableDobotCR5(DifferentiableRobotModel):
+    def __init__(self, device=None):
+        rel_urdf_path = "dobot/urdf/cr5.urdf"
+        self.urdf_path = os.path.join(robot_description_folder, rel_urdf_path)
+        self.learnable_rigid_body_config = None
+        self.name = "differentiable_dobot_cr5"
+        super().__init__(self.urdf_path, self.name, device=device)
+
 
 class DifferentiableFrankaPanda(DifferentiableRobotModel):
     def __init__(self, device=None):
