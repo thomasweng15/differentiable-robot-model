@@ -44,7 +44,8 @@ class URDFRobotModel(object):
             joint = self.robot.joints[jid]
             joint_name = joint.name
             # find joint that is the "child" of this body according to urdf
-
+            print(f"Processing link {link_name}")
+            print(f"\tProcessing joint {joint_name} of link {link_name}")
             rot_angles = torch.tensor(
                 joint.origin.rotation, device=self._device
             )

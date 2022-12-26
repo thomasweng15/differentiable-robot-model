@@ -14,6 +14,7 @@ Currently, our code should work with any kinematic trees. This package comes wit
 * Allegro Hand
 * Fetch Arm
 * a 2-link toy robot
+* Dobot CR5
 
 You can find the documentation here:  [Differentiable-Robot-Model Documentation](https://fmeier.github.io/differentiable-robot-model-docs/)  
 
